@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Weather Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="weather-container">
+        <h2>Live Weather Information</h2>
+        <label for="city">Enter City Name: </label>
+        <input type="text" id="city" placeholder="Enter city name">
+        <button onclick="getWeather()">Search</button>
+        
+        <div id="weather-details">
+            <h3 id="city-name"></h3>
+            <p id="date-info"></p>
+            <p id="main-condition"></p>
+            <p id="weather-condition"></p>
+            <img id="weather-icon" src="" alt="Weather Icon" style="display: none;">
+            <p id="temperature"></p>
+            <p id="pressure"></p>
+            <p id="humidity"></p>
+            <p id="wind-speed"></p>
+            <p id="wind-direction"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Powered by OpenWeatherMap</p>
+    </footer>
+
+    <script src="style.js"></script>
+</body>
+</html>
